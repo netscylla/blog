@@ -6,7 +6,7 @@ tags: [Cloud, Google, S3, pentest, redteam, blueteam]
 ---
 Google S3 Bucket configuration is relatively secure by default. This is what should happen (by default) if you try to access any files from your bucket as an anonymous user:
 
-![](/assets/google_s3.png)
+![](/blog/assets/google_s3.png)
 
 This is because by default only the ‘object owners’ are permitted access.
 
@@ -16,7 +16,7 @@ Below we will assess the functionality of Googles S3 buckets and IAM policies, t
 # Bucket Contents
 What is actually stored in Netscylla’s test bucket at the time of testing (may not be available at the time of reading):
 
-![](/assets/gcp.png)
+![](/blog/assets/gcp.png)
 
 **Do not click ‘Share Publicly’ unless you want your data accessible anonymously!** This changes the permissions of the data in an uncontrollable way apart from that tickbox! Also the data will become cached in Google’s CDN!
 
@@ -26,16 +26,16 @@ This is where developers can sometimes get things wrong. And a lucky well-timed 
 
 As a test-case image 256222_2.jpg was publicly shared, and immediately we unticked the ‘share publicly’ box. This has no noticeable effect as I can still access the stored object in another browser. This was the case for further 60mins.
 
-![](/assets/google_s3_2.png)
+![](/blog/assets/google_s3_2.png)
 
 # Google Storage & Anonymous Access
 S3 Buckets should be secure by default, to give anonymous users access you must add the ‘allUsers’ to the ‘Object Viewer’ role:
 
-![](/assets/google_s3_3.png)
+![](/blog/assets/google_s3_3.png)
 
 This configuration enables anonymous internet users to query your bucket, and access all of your data stored within:
 
-![](/assets/google_s3_4.png)
+![](/blog/assets/google_s3_4.png)
 
 If we wanted to share this with all authenticated Google Users (those with gmail/googlemail/g-suite accounts) we could alternatively have opened the permissions to ‘allAuthenticatedUsers’.
 
@@ -45,11 +45,11 @@ Simply deleting the IAM user policies for the following accounts should stop ano
 * allAuthenticatedUsers
 Simply clicking the trash can next to ‘allUsers’ (in the example above) should return the bucket to its default state.:
 
-![](/assets/google_s3_5.png)
+![](/blog/assets/google_s3_5.png)
 
 Then confirm the permissions are removed by revisiting the bucket as an anonymous user in another Internet browser:
 
-![](/assets/google_s3_6.png)
+![](/blog/assets/google_s3_6.png)
 
 **Note**: Any private files will remain private, but any previously shared files will still remain accessible while the Google server still caches them!
 
@@ -63,11 +63,11 @@ Google does log some information about your buckets, accessible here: https://co
 
 Just remember to change the drop-down from ‘GCE Project’ to ‘GCS Bucket’
 
-![](/assets/gcp_2.png)
+![](/blog/assets/gcp_2.png)
 
 The logging data has enough details to track IAM policies being removed and applied, which UserAccount, and IP Address and Browser Information were involved in the changes. Should a breach occur? we can easily track the root-cause, of what happened? and when it happened?
 
-![](/assets/google_s3_7.png)
+![](/blog/assets/google_s3_7.png)
 
 More on Storage logging can be found here: https://cloud.google.com/storage/docs/gsutil/commands/logging
 

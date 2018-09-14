@@ -4,7 +4,7 @@ title:  "Hacking MongoDB"
 date:   2018-09-13 13:49:33 +0000
 tags: [Databases, pentest, redteam, blueteam]
 ---
-![](/assets/mongodb.png)
+![](/blog/assets/mongodb.png)
 
 Another day, another breach. But this time an unsecured mongodb instance in the cloud. https://www.scmagazineuk.com/veeam-mongodb-left-unsecured-440-million-records-exposed/article/1492715
 
@@ -16,7 +16,7 @@ By default Mongodb listens on TCP/27017, but it can depending on configuration a
 
 In the fore mentioned breach Shodan was used to discover the vulnerable instance, and from our screenshot today there are approximately 59,503 accessible instances:
 
-![](/assets/shodan_mongo.png)
+![](/blog/assets/shodan_mongo.png)
 
 ## Security and Authentication Nightmare
 By default mongodb has no authentication and all users have full read privileges.

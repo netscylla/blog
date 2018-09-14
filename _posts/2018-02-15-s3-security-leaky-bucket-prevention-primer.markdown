@@ -4,7 +4,7 @@ title:  "S3 Security: Leaky Bucket Prevention Primer"
 date:   2018-02-15 13:49:33 +0000
 tags: [Cloud, AWS, S3, pentest, redteam, blueteam]
 ---
-![](/assets/leaky_bucket.jpeg)
+![](/blog/assets/leaky_bucket.jpeg)
 
 With yet another news report of another S3 bucket leak, we at Netscylla think its important to highlight some of the known features of how to secure your AWS S3 Buckets.
 
@@ -137,7 +137,7 @@ For more definitive examples on locking down your buckets, we recommend reading:
 
 For custom setups you may want to utilise the help of the AWS policy generator http://awspolicygen.s3.amazonaws.com/policygen.html and the Policy Simulation Sandbox https://policysim.aws.amazon.com/home/index.jsp to aid in perfecting your policies and permissions:
 
-![](/assets/iam_sandbox.jpeg)
+![](/blog/assets/iam_sandbox.jpeg)
 
 ## IAM Roles
 You can use AWS IAM roles to grant permissions for AWS services to call other AWS services on your behalf, or create and manage AWS resources for you in your account. AWS services such as Amazon Lex also offer service-linked roles that are predefined and can be assumed only by that specific service.

@@ -4,8 +4,7 @@ title:  "Trello vs the Google Dork"
 date:   2018-08-02 13:49:33 +0000
 tags: [Web Application, pentest, redteam, blueteam]
 ---
-![](/assets/passwords.png)
-
+![](/blog/assets/passwords.png)
 
 ## What is Trello?
 Trello is a web-based project management application originally made by Fog Creek Software in 2011. Basically, its on online Kanban board.
@@ -25,11 +24,11 @@ site:trello.com intext:postgresql intext:root
 site:trello.com intext:BEGIN RSA PRIVATE KEY
 ```
 
-![](/assets/trello_1.png)
+![](/blog/assets/trello_1.png)
 
-![](/assets/trello_2.png)
+![](/blog/assets/trello_2.png)
 
-![](/assets/trello_3.png)
+![](/blog/assets/trello_3.png)
 
 If you are looking for a better way to share passwords among your employees the answer is, well, don’t. There are several good Secure Identity Management applications online offering a single sign-on (SSO) option instead. Simply put, you can give each of your employees a single, unique password granting them access to numerous applications. This as opposed to handing them dozens of master credentials to everything your company or organisation holds dear.
 

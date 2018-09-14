@@ -5,7 +5,7 @@ date:   2018-01-20 13:49:33 +0000
 tags: [malware, powershell, pentest, redteam, blueteam]
 ---
 
-![](/assets/google_store.png)
+![](/blog/assets/google_store.png)
 
 In the recent months we have seen much media coverage over S3 bucket leaks, where developers and organisations have forgotten to check the Access-Control-List’s (ACLs) that protect the authorisation of whom can access the data stored within these particular cloud containers. This has lead to some embarrassing moments for both Governments and Private companies.
 

@@ -9,7 +9,7 @@ Centre of Information Security (CIS) for Amazon Web Services has a networking se
 ## Trusted Advisor
 For those with minimalistic accounts, or even support contracts ‘ Trusted Advisor’ is an excellent source for potential weaknesses. But what if we wanted a more generic audit, to flag any instances that expose any service to the public internet (0.0.0.0/0 or ::0)
 
-![](/assets/trusted_advisor_1.png)
+![](/blog/assets/trusted_advisor_1.png)
 
 That is why we created two simple python scripts to help fish out mis-configured security groups and ec2 instances:
 * [https://github.com/netscylla/AWS_Scripts/blob/master/hunt_egress.py](https://github.com/netscylla/AWS_Scripts/blob/master/hunt_egress.py)

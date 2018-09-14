@@ -6,7 +6,7 @@ tags: [Cloud, AWS, pentest, redteam, blueteam]
 ---
 Endpoints are a new feature of VPCs (Virtual Private Clouds), a VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
 
-![](/assets/aws_endpoints.jpeg)
+![](/blog/assets/aws_endpoints.jpeg)
 
 Why is this useful? It means that your network communications no longer have to flow over the public internet to reach the public interfaces of AWS services such as S3, API Gateways; a full list of endpoints can be found below.
 
@@ -34,17 +34,17 @@ A gateway endpoint is a gateway that is a target for a specified route in your r
 ## Creating an Endpoint
 To create an endpoint, open up the AWS management console and head over to your VPC panel, and choose Endpoints:
 
-![](/assets/aws_endpoints_2.png)
+![](/blog/assets/aws_endpoints_2.png)
 
 ## Create Endpoint Wizard
 Click the big blue button, and you should see the following screen, simply select the AWS services you wish to join through this PrivateLink
 
-![](/assets/aws_endpoints_3.png)
+![](/blog/assets/aws_endpoints_3.png)
 
 ## Routing
 Select which routing table and subnets you want routing to the endpoint. In our example we are using the default vpc:
 
-![](/assets/aws_endpoints_4.png)
+![](/blog/assets/aws_endpoints_4.png)
 
 ## Policies
 Permitting a FullAccess policy is impractical to security, we advise utilising the PolicyGenerator to configure a secure policy to prevent any possible data leaks, or future misconfiguration or corruption of data/messages. https://awspolicygen.s3.amazonaws.com/policygen.html

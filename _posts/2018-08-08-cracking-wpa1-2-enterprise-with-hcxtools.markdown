@@ -4,7 +4,7 @@ title:  "Cracking WPA1/2/Enterprise with HCXTools"
 date:   2018-08-08 13:49:33 +0000
 tags: [WiFi, pentest, redteam, blueteam]
 ---
-![](/assets/WiFi.png)
+![](/blog/assets/WiFi.png)
 
 A new technique to crack WPA PSK (Pre-Shared Key) passwords.
 

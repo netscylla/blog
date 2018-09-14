@@ -4,7 +4,7 @@ title:  "Offensive Implants Part 2"
 date:   2018-01-30 13:49:33 +0000
 tags: [hardware, pentest, redteam, blueteam]
 ---
-![](/assets/croc.png)
+![](/blog/assets/croc.png)
 
 In the previous post Part 1, we looked at some hardware that was very similar to the Raspberry Pi, we lightly touched on how to prepare the linux kernel, the commands to compile a custom kernel, and how to install a base Linux image. We also wrote about ConfigFS and how we planned to turn the small disposable platform into a customisable BadUSB device for the purposes of offensive security testing. Part 2 looks at some of the scripts jig-sawed/hacked together to provide the features and functionalities we are after from a BadUSB based device.
 
@@ -693,7 +693,7 @@ We agree that there are a lot of similarities to the another device already on t
 
 ## Comparison of other devices on the Market?
 
-![](/assets/croc_2.png)
+![](/blog/assets/croc_2.png)
 
 We plan to release everything as OpenSource (the Kernel and rootfs is already available :) See the previous post!)… watch this space!
 

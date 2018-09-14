@@ -41,7 +41,7 @@ cd my_lambda_module;zip -r my_lambda.zip *
 ```
 Goto the AWS console and open your lambda function, click ‘Edit Code Inline’, and change to ‘Upload a .ZIP file’
 
-![](/assets/lambda_3.png)
+![](/blog/assets/lambda_3.png)
 
 You code should appear after clicking ‘Save’
 

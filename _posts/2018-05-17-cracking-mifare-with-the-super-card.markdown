@@ -6,7 +6,7 @@ tags: [RFID, hardware, pentest, redteam, blueteam]
 ---
 _Alternatively called Proxmark-Card, Sniffer-Card, or Suppa Card_
 
-![](/assets/RFID_reader.jpeg)
+![](/blog/assets/RFID_reader.jpeg)
 
 The program below is an interface to the Mifare Super (Suppa/Supper) Card utilising the libnfc 1.7.1 library (probably now outdated as this program was written in early 2014).
 

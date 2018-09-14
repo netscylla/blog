@@ -4,11 +4,11 @@ title:  "Detecting and Tracking the Red-Team"
 date:   2018-01-22 13:49:33 +0000
 tags: [malware, pentest, redteam, blueteam]
 ---
-![](/assets/Malware.jpg)
+![](/blog/assets/Malware.jpg)
 
 Last week we noticed this tweet on twitter from @JohnLaTwc: https://twitter.com/JohnLaTwC/status/952948929628291072
 
-![](/assets/johnlambert_1.jpeg)
+![](/blog/assets/johnlambert_1.jpeg)
 
 We are big fans of John’s tweets, and often use his discoveries to help build simulated malware campaigns for clients in Red-Teaming. This one was particularly interesting so we decided to dive into this one a little deeper.
 
@@ -38,23 +38,23 @@ CIDR: 138.68.0.0/16
 NetName: DIGITALOCEAN-15
 Reverse DNS: competitivebeauty.com
 </pre>
-![](/assets/whois_1.jpeg)
+![](/blog/assets/whois_1.jpeg)
 
 # Diving Deeper into the Payloadv10.exe
 First we give the executable a once over with PEStudio for some hints to its maker, operation and possible code-base.
 
-![](/assets/pestudio_1.jpeg)
+![](/blog/assets/pestudio_1.jpeg)
 
 There is a big clue in the debug path:
 
-![](/assets/pestudio_2.jpeg)
+![](/blog/assets/pestudio_2.jpeg)
 
 Now we have some hints that the author is Surecloud and that this executable is part of a Red-Team, penetration test or ransomware simulation!
 
 # Lets take this a little bit further...
 The executable is a .Net compiled executable so we can use JustDecompile to disassemble the application into .Net classes and procedures
 
-![](/assets/just_decompile.png)
+![](/blog/assets/just_decompile.png)
 
 This executable has the following operations:
 * ping
@@ -62,23 +62,23 @@ This executable has the following operations:
 * sendUserDetails
 
 Call home IP matches the C2 address from earlier:
-![Call home IP matches the C2 address from earlier](/assets/just_decompile_2.png)
+![Call home IP matches the C2 address from earlier](/blog/assets/just_decompile_2.png)
 
 The malware collects information on local and domain users:
-![The malware collects information on local and domain users](/assets/just_decompile_3.png)
+![The malware collects information on local and domain users](/blog/assets/just_decompile_3.png)
 
 The malware sends all collected data unencrypted over the public internet:
-![The malware sends all collected data unencrypted over the public internet.](/assets/just_decompile_4.png)
+![The malware sends all collected data unencrypted over the public internet.](/blog/assets/just_decompile_4.png)
 
 Did we forget something? Isn’t this meant to be ransomware…
 
 Not really, as the decompiled code clearly indicates this is a simulation.
 
-![](/assets/just_decompile_5.png)
+![](/blog/assets/just_decompile_5.png)
 
 LinkedIn quick search for Surecloud, confirms a professional Penetration Test Team in United Kingdom:
 
-![](/assets/linkedin_1.png)
+![](/blog/assets/linkedin_1.png)
 
 # Ransom? What Ransom?
 Looking at the decompiled code, there is no functionality to process or take payments. This ‘malware’ is only a simulated exercise!

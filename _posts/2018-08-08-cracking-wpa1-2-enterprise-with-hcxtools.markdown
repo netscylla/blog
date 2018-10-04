@@ -19,6 +19,8 @@ The main difference from existing attacks is that in this attack, capture of a f
 
 Currently there is no list of vendors or routers that are vulnerable to this attack. But theoretically it should work against all 802.11i/p/q/r networks with roaming functions enabled (most modern routers).
 
+![](/assets/wifi_hcx_frame.png)
+
 The main advantages of this attack are as follow:
 * No more regular users required — because the attacker directly communicates with the AP (aka “client-less” attack)
 * No more waiting for a EAPOL handshake between the regular user and the AP

@@ -13,6 +13,7 @@ AWS Lambda currently supports the following languages:
 * Java version 8
 * Node versions 4, 6 & 8
 * Python versions 2 & 3
+
 It is advisable that you at least know one of these programming scripting languages before you begin with any Lamba code.
 
 **For demonstration purposes we will continue with python3.**

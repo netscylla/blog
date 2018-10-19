@@ -5,7 +5,7 @@ date:   2018-05-12 13:49:33 +0000
 tags: [hardware, IoT, pentest, redteam, blueteam]
 ---
 
-![](/blog/assets/sign_hack.jpeg)
+![](/assets/sign_hack.jpeg)
 
 You can usually find digital information signs in hotels, conference centres, sport stadiums, shopping centres/malls and other places where people might collectively meet.
 

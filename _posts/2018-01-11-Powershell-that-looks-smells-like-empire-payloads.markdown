@@ -4,7 +4,7 @@ title:  "Powershell that looks & smells like Empire Payloads"
 date:   2018-01-11 13:49:33 +0000
 tags: [malware, powershell, empire, pentest, redteam, blueteam]
 ---
-![](/blog/assets/empire.png)
+![](/assets/empire.png)
 
 Today we found the following powershell Proof of Concept (PoC) on pastebin.com, we immediately recognised this as an Empire payload. The junior analysts in the team where shocked that we could quickly call this out. So we showed them some key points to consider, that allows you to quickly analyse these kinds of PoC’s within 30 seconds.
 

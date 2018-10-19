@@ -4,7 +4,7 @@ title:  "Cracking WPA1/2/Enterprise with HCXTools"
 date:   2018-08-08 13:49:33 +0000
 tags: [WiFi, pentest, redteam, blueteam]
 ---
-![](/blog/assets/WiFi.png)
+![](/assets/WiFi.png)
 
 A new technique to crack WPA PSK (Pre-Shared Key) passwords.
 
@@ -18,6 +18,8 @@ This attack was discovered accidentally while looking for new ways to attack the
 The main difference from existing attacks is that in this attack, capture of a full EAPOL 4-way or half EAPOL 2-way handshake is not required. The new attack is performed on the RSN IE (Robust Security Network Information Element) of a single EAPOL frame.
 
 Currently there is no list of vendors or routers that are vulnerable to this attack. But theoretically it should work against all 802.11i/p/q/r networks with roaming functions enabled (most modern routers).
+
+![](/assets/wifi_hcx_frame.png)
 
 The main advantages of this attack are as follow:
 * No more regular users required — because the attacker directly communicates with the AP (aka “client-less” attack)

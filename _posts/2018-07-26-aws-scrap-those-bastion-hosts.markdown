@@ -6,7 +6,7 @@ tags: [Cloud, AWS, pentest, redteam, blueteam]
 ---
 Recently, we attended an AWS workshop, where there appeared to be a change of opinion on the use of bastion hosts. Instead AWS Systems Manager (SSM) is viewed as a more secure alternative to manage your EC2 instances, with the additional benefit of lower administration costs.
 
-![](/blog/assets/aws_bastion.png)
+![](/assets/aws_bastion.png)
 
 ## Why Use Bastion Hosts?
 Many cloud training outfits and AWS themselves have boasted several reasons, and good-architecture papers as to utiltise bastion hosts. Some of these reasons include:
@@ -45,7 +45,7 @@ With AWS IGW you can also utilise Application Load Balancer (ALB) and WAF to fur
 
 ## New Architecture
 
-![](/blog/assets/aws_bastion_2.png)
+![](/assets/aws_bastion_2.png)
 
 ## References
 * https://aws.amazon.com/blogs/mt/replacing-a-bastion-host-with-amazon-ec2-systems-manager/

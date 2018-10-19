@@ -4,7 +4,7 @@ title:  "Red-Teaming and the Importance of Failing!"
 date:   2018-07-29 13:49:33 +0000
 tags: [pentest, redteam, blueteam]
 ---
-![](/blog/assets/alert.png)
+![](/assets/alert.png)
 
 In the case of Red Teaming, the mistake is most likely completely harmless, unless it’s one of these:
 * An ethics breach

@@ -6,7 +6,7 @@ tags: [Cloud, AWS, pentest, redteam, blueteam]
 ---
 Quick and simple post on playing around with Cloudwatch on AWS EC2.
 
-![](/blog/assets/cloudwatch.png)
+![](/assets/cloudwatch.png)
 
 ## Install an IAM role to govern the transfer of the logs
 Then go to the EC2 dashboard https://console.aws.amazon.com/iam
@@ -82,7 +82,7 @@ Cloudwatch
 </pre>
 Hopefully, you should then be collecting logs from the EC2 instance(s) that have the role applied.
 
-![](/blog/assets/cloudwatch_log.png)
+![](/assets/cloudwatch_log.png)
 
 Then the fun begins, playing with filter, metrics, alarms, and Lambda rules to shift the data into an elastic search platform.
 

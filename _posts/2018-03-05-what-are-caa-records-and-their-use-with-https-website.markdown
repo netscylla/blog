@@ -6,7 +6,7 @@ tags: [SSL, pentest, redteam, blueteam]
 ---
 All certificate authorities should now utilise a Domain Name System (DNS) record that allows HTTPS website owners to restrict who can issue SSL certificates for their domain names. It’s a long-needed defence against the issue of fraudulent certificates, a security risk that domain owners had few protections for until now.
 
-![](/blog/assets/caa.png)
+![](/assets/caa.png)
 
 # Certification Authority Authorization (CAA)
 The Certification Authority Authorization (CAA) is a DNS-based mechanism that allows domain administrators to specify which specific certificate authorities are allowed to issue SSL certificates for their domain names.

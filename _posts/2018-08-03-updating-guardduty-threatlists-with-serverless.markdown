@@ -4,7 +4,7 @@ title:  "Updating GuardDuty Threatlists with Serverless"
 date:   2018-08-03 13:49:33 +0000
 tags: [Cloud, AWS, pentest, redteam, blueteam]
 ---
-![](/blog/assets/aws_guardduty_1.png)
+![](/assets/aws_guardduty_1.png)
 
 GuardDuty has the ability to read in custom intelligence feeds (or threat lists) from S3 buckets. But it can be quite a drag to manually download, prepare/sanitise and upload continuously to an S3 bucket; this is where we thought serverless would be a winner here — fire and forget, and always have an up-to-date reputation feed!
 
@@ -64,19 +64,19 @@ Hint: Use Cloudwatch
 
 We used the following Cron expression to run every night at midnight:
 
-![](/blog/assets/lambda_event_1.png)
+![](/assets/lambda_event_1.png)
 
 And linked it to our Lamba script:
 
-![](/blog/assets/lambda_event_2.png)
+![](/assets/lambda_event_2.png)
 
 ### Add the Threatlist to GuardDuty
 
-![](/blog/assets/guardduty_threat_1.png)
+![](/assets/guardduty_threat_1.png)
 
 done
 
-![](/blog/assets/guardduty_threat_2.png)
+![](/assets/guardduty_threat_2.png)
 
 ### And Finished…
 Now our OTX reputation feed will continually rotate every night.

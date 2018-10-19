@@ -4,7 +4,7 @@ title:  "Hacking IPv6 a Primer"
 date:   2018-02-05 13:49:33 +0000
 tags: [networking, pentest, redteam, blueteam]
 ---
-![](/blog/assets/ipv6.jpeg)
+![](/assets/ipv6.jpeg)
 
 Today, I had a junior network administrator enquire about IPv6 connectivity; They had heard of IPv6 and had seen IPv6 addresses on some Operating System interfaces, but had never really interacted with IPv6. This was due to the business network (at this point of time) not supporting it. So I gave him some notes to try at home for him to practise on his home-lab.
 

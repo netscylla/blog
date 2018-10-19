@@ -9,8 +9,8 @@ title: Netscylla's Blog
 email: enquiry@netscylla.com
 description: >- # this means to ignore newlines until "baseurl:"
   Interesting thoughts and opinions from the field of cyber security in general, focusing mainly on penetration testing and red-teaming, with the occasional perspective from blue-teaming and DevSecOps.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://www.netscylla.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" 
+url: "https://www.netscylla.com"
 twitter_username: netscylla
 github_username:  netscylla
 facebook_username: netscylla

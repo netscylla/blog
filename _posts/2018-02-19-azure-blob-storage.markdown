@@ -4,13 +4,13 @@ title:  "Azure Blob Storage"
 date:   2018-02-19 13:49:33 +0000
 tags: [cloud, Azure, pentest, redteam, blueteam]
 ---
-![](/blog/assets/win_logo.png)
+![](/assets/win_logo.png)
 
 This post investigates how Azure manages its blob storage, and how to create manage and list blob containers and attempt file enumeration and retrieval.
 
 Like Google Storage, Azure Blobs are secure by default; a container and any blobs within it may only be accessed by the owner of the storage account. To give anonymous users read permissions to a container and its blobs, you can set the container permissions to allow public access. Anonymous users can read blobs within a publicly accessible container without authenticating the request.
 
-![](/blog/assets/win_s3_perms.png)
+![](/assets/win_s3_perms.png)
 
 You can configure a container with the following permissions:
 
@@ -21,11 +21,11 @@ You can configure a container with the following permissions:
 # Creating a Blob Storage Area
 First create a storage account:
 
-![](/blog/assets/win_s3_create.png)
+![](/assets/win_s3_create.png)
 
 Next Choose an appropriate Container
 
-![](/blog/assets/win_s3_create_2.png)
+![](/assets/win_s3_create_2.png)
 
 # Using Azure Powershell
 ## List Storage Accounts
@@ -33,7 +33,7 @@ Next Choose an appropriate Container
 > Get-AzureRMStorageAccount | Select StorageAccountName, Location
 </pre>
 
-![](/blog/assets/win_s3_ps_1.png)
+![](/assets/win_s3_ps_1.png)
 
 There are additional StorageAccounts depicted, first is for a web-shell interface in Azure, the last one is to gather diagnostics from a test virtual machine.
 
@@ -46,7 +46,7 @@ There are additional StorageAccounts depicted, first is for a web-shell interfac
 > $storageAccount = Get-AzureRmStorageAccount -ResourceGroupName $resourceGroup -Name $storageAccountName
 </pre>
 
-![](/blog/assets/win_s3_ps_2.png)
+![](/assets/win_s3_ps_2.png)
 
 # Delete a Storage Account
 <pre>
@@ -59,7 +59,7 @@ Or list files (blobs) within a container
 
 >Get-AzureStorageBlob -Container $ContainerName -Context $ctx | select Name
 </pre>
-![](/blog/assets/win_s3_ps_3.png)
+![](/assets/win_s3_ps_3.png)
 
 Above you can see three containers:
 
@@ -75,7 +75,7 @@ https://storageaccountname.blob.core.windows.net/containername/blobname
 
 Example:
 
-![](/blog/assets/win_s3_create_3.png)
+![](/assets/win_s3_create_3.png)
 
 # Conclusion
 Attacking Azure blob containers is much more difficult than attacking AWS S3, and Google Storage as containers are not easily enumerated. Also to succeed in an attack; the attacker needs to know the specific name of the blob stored in the container.

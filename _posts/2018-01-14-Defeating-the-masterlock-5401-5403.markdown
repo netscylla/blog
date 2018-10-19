@@ -20,7 +20,7 @@ Below is a ML-5401 that Netscylla own’s and the Sparrows ‘Ultimate decoder�
 
 **Edit**: 2018–01–20 a friend mentioned that an old floppy disk cut up also works wonders!
 
-![](/blog/assets/masterlock_1.jpeg)
+![](/assets/masterlock_1.jpeg)
 
 # The Attack
 How to open the ML-5401:
@@ -32,7 +32,7 @@ Once all flat spots have been found try the unlock switch; if it does not open, 
 
 Example positioning of the ‘Ultimate decoder’:
 
-![](/blog/assets/masterlock_2.jpeg)
+![](/assets/masterlock_2.jpeg)
 
 # Spotted in the wild
 Netscylla have seen these locks used in numerous places: including mounted on the front/back walls/pillars of offices, houses, holiday rental homes, outside/inside data-centre walls, private offices, etc.

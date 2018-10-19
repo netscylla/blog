@@ -13,6 +13,7 @@ AWS Lambda currently supports the following languages:
 * Java version 8
 * Node versions 4, 6 & 8
 * Python versions 2 & 3
+
 It is advisable that you at least know one of these programming scripting languages before you begin with any Lamba code.
 
 **For demonstration purposes we will continue with python3.**
@@ -41,7 +42,7 @@ cd my_lambda_module;zip -r my_lambda.zip *
 ```
 Goto the AWS console and open your lambda function, click ‘Edit Code Inline’, and change to ‘Upload a .ZIP file’
 
-![](/blog/assets/lambda_3.png)
+![](/assets/lambda_3.png)
 
 You code should appear after clicking ‘Save’
 

@@ -4,7 +4,7 @@ title:  "Offensive Implants Part 1"
 date:   2018-01-29 13:49:33 +0000
 tags: [hardware, pentest, redteam, blueteam]
 ---
-![](/blog/assets/licheepi_1.png)
+![](/assets/licheepi_1.png)
 
 As technology moves forward over time, we miniaturise our hardware to have a smaller physcial footprint. Additionally, if you pick up naked Single Board Computers (SBC) from up-coming developers, you can get a great deal on value for money. This board is currently available at $12USD, which means for a disposable computer this is a very interesting platform to start some offensive development. Also its size is 46x26mm!
 
@@ -15,15 +15,15 @@ Kernel and U-boot sources available from: https://github.com/Lichee-Pi
 
 Below are some more pictures of the LicheePi v1, and how it compares in size to a traditional sdcard.
 
-![](/blog/assets/licheepi_2.jpeg)
+![](/assets/licheepi_2.jpeg)
 
-![](/blog/assets/licheepi_3.jpeg)
+![](/assets/licheepi_3.jpeg)
 
 The later designs of the Lichee Pi have changed slightly but its physical dimensions have not changed.
 
 And finally a handy pinout:
 
-![](/blog/assets/licheepi_4.png)
+![](/assets/licheepi_4.png)
 
 # Specification
 The default specification is as follows:

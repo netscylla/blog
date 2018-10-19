@@ -4,7 +4,7 @@ title:  "Kubernetes or KuberPwn"
 date:   2018-03-13 13:49:33 +0000
 tags: [SSL, pentest, redteam, blueteam]
 ---
-![](/blog/assets/kubernetes.png)
+![](/assets/kubernetes.png)
 
 Ever since that news story about Telsa’s cloud infrastructure being compromised and a bitcoin miner loaded on their Kubernetes estate. Netscylla was intrigued on how easy this could happen to any of our customers cloud estates. So we decided to do some OSINT (Open Source reconnaissance) and our own research.
 
@@ -26,7 +26,7 @@ Finding open management interfaces is as easy as querying Shodan/Censys for:
 * Unsecured dashboards
 Are the graphical management interfaces which are the easiest to compromise, just click around the interface looking for storage links; You may be lucky enough to spot some credentials for an S3 bucket?
 
-![](/blog/assets/kubernetes_2.png)
+![](/assets/kubernetes_2.png)
 
 ### 10250/TCP Management Port
 The HTTPS service on 10250/TCP is the default management API interface for Kubernetes clusters. Not secured by default! This means that the developer/administrator is responsible for securing their services.

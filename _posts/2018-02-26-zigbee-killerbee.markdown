@@ -4,18 +4,18 @@ title:  "Zigbee & Killerbee"
 date:   2018-02-26 13:49:33 +0000
 tags: [hardware, pentest, redteam, blueteam, Zigbee, WiFi]
 ---
-![](/blog/assets/xbee.jpeg)
+![](/assets/xbee.jpeg)
 
 Now it has been four years since I last performed any real Zigbee penetration testing, at the time I was trying to compromise a building management system through a fridge. But over the weekend I decided to pull out the old kit and have a scan for any hidden Zigbee devices in our office.
 
 At the time Zigbee penetration testing was relatively new, and tooling was not as developed or blogged about as it is today. Killerbee was available and this helped with some initial enumeration of Zigbee enabled devices, but scapy was used to generate packets and communicate with the network.
 
-![](/blog/assets/atmel_zigbee.jpeg)
+![](/assets/atmel_zigbee.jpeg)
 
 # Flashing the RZ Raven
 Now the RZ Raven is shipped with firmware that has no monitor mode! So you have to flash the modified firmware in the killerbee subdirectory. This device had the first firmware modification 001, but over the last four years this has been improved by the riverloopsec team and Scytmo. Firmware 003 is now the latest version. So we dusted off the AVR dragon to upgrade the device. The JTAG ports you see in the image above are a tiny 50mil 10 pin, so you have to be creative to get some wires into these through-holes without touching; I just pivoted off a breadboard.
 
-![](/blog/assets/avr_dragon.png)
+![](/assets/avr_dragon.png)
 
 The AVR Dragon is a cheap board aimed at students for flashing Atmel chips and microcontrollers. Its easily available on eBay and electronic stores between £30–50 depending if you buying used or new.
 

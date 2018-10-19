@@ -21,7 +21,7 @@ The following URL would list all directors at example-ltd (fictious company)
 ```
 http://linkedin.com/title/director-at-example-ltd/
 ```
-![](/blog/assets/osint_1.png)
+![](/assets/osint_1.png)
 
 This enables us to quickly identify targets and obtain a brief history of the targets careers. We are then free to view their profile in depth — provided they havnt locked down their profile. However, this is not often the case, easy pickings…
 
@@ -68,7 +68,7 @@ The second guy asked about fake invoice scams. The first guy replied about the f
 * use an online re-mailer to mask your real identity
 * request that an urgent invoice is paid on the targets behalf.
 
-![](/blog/assets/osint_2.png)
+![](/assets/osint_2.png)
 
 ## The End
 At this point out train was on the platform, we boarded, but unfortunately the two men did not! So our insight into their experience/scams/consultancy services comes to an end.

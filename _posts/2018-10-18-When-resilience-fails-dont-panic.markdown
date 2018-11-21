@@ -2,7 +2,7 @@
 layout: post
 title:  "When Resilience Fails, Don't Panic!"
 description: "With ransomware and wiperware being the criminals choice of earning a quick buck, having a secure backup is more important than ever. But what happens when resilience fails? and you risk losing your backups. This post discusses the attempted recovery of OSX's Timemachine, after it has become faulty."
-date:   2018-10-03 13:49:33 +0000
+date:   2018-10-18 13:49:33 +0000
 tags: [resilience, forensic, blueteam, backup, OSX]
 ---
 ![TimeMachine](/assets/TimeMachine.png)

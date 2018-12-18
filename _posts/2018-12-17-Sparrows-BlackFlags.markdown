@@ -48,4 +48,4 @@ For those already proficient in dimple pin picking, or those that already have a
  * It’s usual to rake the dimple lock first, set as many pins as possible using the simplest technique, then single pick the remaining.
 
 # References
-Images are from (Sparrowslockpicks.com)[http://www.sparrowslockpicks.com]
+Images are from [Sparrowslockpicks.com](http://www.sparrowslockpicks.com)

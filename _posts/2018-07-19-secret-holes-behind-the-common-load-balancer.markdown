@@ -4,7 +4,7 @@ title:  "Secret Holes Behind the Common Load-Balancer"
 date:   2018-07-19 13:49:33 +0000
 tags: [networking, pentest, redteam, blueteam]
 ---
-![](/assets/loadbalancer.jpeg)
+![](/blog/assets/loadbalancer.jpeg)
 
 Those new to Information Security may not know what a load-balancer is? Those that have even been in the industry a few years, may not fully understand them? But due to a new flux of High-Availability (HA) application architectures due to Cloud Provisioners, being able to understand these mythical beasts, and assess individually the servers behind them may pay off considerably in the red-team?
 

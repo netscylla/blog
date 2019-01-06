@@ -4,7 +4,7 @@ title:  "Dridex Loader Technique Used For MSF Shells"
 date:   2018-01-26 13:49:33 +0000
 tags: [malware, reversing, powershell, pentest, redteam, blueteam]
 ---
-![](/assets/msf.png)
+![](/blog/assets/msf.png)
 
 Recently we keep seeing this same/simliar payload(s) over and over on Pastebin. Netscylla first came across a similar sample payload in 2016 used in a Dridex campaign targeting corporations via Phishing and fake Invoices which then proceeded to install the infamous banking Trojan. We at Netscylla have on many occasions used this sample to modified it with our own code and thrown it back at Blue Teams during simulated Red Teaming. Below is an outline of how to reverse and rebuild the sample.
 

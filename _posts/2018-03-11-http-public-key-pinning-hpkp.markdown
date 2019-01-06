@@ -8,7 +8,7 @@ With SSL interception and Man-in-the-Middle attacks becoming more frequent. In a
 
 HPKP has the potential to lock out users for a long time if used incorrectly! The use of backup certificates and/or pinning the CA certificate is recommended.
 
-![](/assets/https.jpeg)
+![](/blog/assets/https.jpeg)
 
 > HPKP is an Internet security mechanism delivered via an HTTP header which allows HTTPS websites to resist impersonation by attackers using mis-issued or otherwise fraudulent certificates. In order to do so, it delivers a set of public keys to the client (browser), which should be the only ones trusted for connections to this domain. — Wikipedia
 

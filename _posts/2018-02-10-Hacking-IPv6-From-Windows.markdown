@@ -4,7 +4,7 @@ title:  "Hacking IPv6 from Windows"
 date:   2018-02-10 13:49:33 +0000
 tags: [networking, pentest, redteam, blueteam]
 ---
-![](/assets/ipv6.jpeg)
+![](/blog/assets/ipv6.jpeg)
 
 The last article drew some constructive criticism that some penetration testers prefer (or are stuck with) using Windows, and that we had intentionally left the Windows Operating System out. Hopefully, this post will alleviate those concerns…
 
@@ -15,7 +15,7 @@ So here we go, IPv6 in Windows 10 should be supported straight out of the box. B
 * Locate your interface, right-click and properties
 * Look for the IPv6 module, ensure there is a tick in the box
 
-![](/assets/win_ipv6.jpeg)
+![](/blog/assets/win_ipv6.jpeg)
 
 # IPv6 Addressing
 More on IPv6 addressing, and various formats can be found here: https://en.wikipedia.org/wiki/IPv6_address
@@ -212,11 +212,11 @@ Using 3rd party tools (or Chocolately package manager) you can install familiar 
 ## Nmap and putty
 Nmap:
 
-![](/assets/nmap_ipv6.jpeg)
+![](/blog/assets/nmap_ipv6.jpeg)
 
 Putty:
 
-![](/assets/putty_ipv6.jpeg)
+![](/blog/assets/putty_ipv6.jpeg)
 
 # Conclusion
 Hopefully, this was enough of an introduction for the more Windows orientated penetration testers to progress with and have a play? Not only to prepare for the future, but also for self development.

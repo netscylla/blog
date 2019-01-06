@@ -4,7 +4,7 @@ title:  "Keysy LF RFID Hacking Made Easy"
 date:   2018-04-21 13:49:33 +0000
 tags: [RFID, hardware, pentest, redteam, blueteam]
 ---
-![](/assets/keysy.jpeg)
+![](/blog/assets/keysy.jpeg)
 
 Those of you that familiar with Netscylla from past escapades and Red-Teaming know that we love RFID technology, and that our own director was once a Proxmark3 developer. Today, in GB we finally received our Keysy devices from TinyLabs from a Kickstarter campaign that started over 2 years ago.
 

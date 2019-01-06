@@ -4,9 +4,10 @@ title:  "Cracking Mifare with the Super-Card"
 date:   2018-05-17 13:49:33 +0000
 tags: [RFID, hardware, pentest, redteam, blueteam]
 ---
+## Cracking Mifare with the Super-Card
 _Alternatively called Proxmark-Card, Sniffer-Card, or Suppa Card_
 
-![](/assets/RFID_reader.jpeg)
+![](/blog/assets/RFID_reader.jpeg)
 
 The program below is an interface to the Mifare Super (Suppa/Supper) Card utilising the libnfc 1.7.1 library (probably now outdated as this program was written in early 2014).
 

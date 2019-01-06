@@ -42,8 +42,8 @@ For those already proficient in dimple pin picking, or those that already have a
 # Tips for picking dimple locks
  * When you pick dimple locks you need to sit the pick on the top of your tension bar. 
  * Dimple locks are pretty much like a normal tumbler lock, differences being:
- * * key turns 90 degrees
- * * pins are bigger compared to normal pin tumblers
+  * * key turns 90 degrees
+  * * pins are bigger compared to normal pin tumblers
  * despite warding on both sides of the key, there is usually only one set of pins - this is so the key works in either orientation.
  * It’s usual to rake the dimple lock first, set as many pins as possible using the simplest technique, then single pick the remaining.
 

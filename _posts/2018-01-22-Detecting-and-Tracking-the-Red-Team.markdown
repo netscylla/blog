@@ -62,13 +62,13 @@ This executable has the following operations:
 * sendUserDetails
 
 Call home IP matches the C2 address from earlier:
-![Call home IP matches the C2 address from earlier](/assets/just_decompile_2.png)
+![Call home IP matches the C2 address from earlier](/blog/assets/just_decompile_2.png)
 
 The malware collects information on local and domain users:
-![The malware collects information on local and domain users](/assets/just_decompile_3.png)
+![The malware collects information on local and domain users](/blog/assets/just_decompile_3.png)
 
 The malware sends all collected data unencrypted over the public internet:
-![The malware sends all collected data unencrypted over the public internet.](/assets/just_decompile_4.png)
+![The malware sends all collected data unencrypted over the public internet.](/blog/assets/just_decompile_4.png)
 
 Did we forget something? Isn’t this meant to be ransomware…
 

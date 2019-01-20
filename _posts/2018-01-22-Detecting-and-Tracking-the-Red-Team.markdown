@@ -22,7 +22,7 @@ There appears to be different payloads targeted at different Microsoft Operating
 * Windows 10
 
 Netscylla decided to take a look at the Windows 10 payload (payloadv10.exe). It looks like it has already been uploaded to virus total and hybrid analysis from @CryptoInsane (twitter).
-*https://www.virustotal.com/en/file/0acc9adbbdbd6db359552e2919aabc3ca4a42a28b3b7c3d26fb8f0699d23bdc2/analysis/
+* https://www.virustotal.com/en/file/0acc9adbbdbd6db359552e2919aabc3ca4a42a28b3b7c3d26fb8f0699d23bdc2/analysis/
 * https://www.reverse.it/sample/0acc9adbbdbd6db359552e2919aabc3ca4a42a28b3b7c3d26fb8f0699d23bdc2?environmentId=100
 SureRansom.exe appears to be the real binary compiled name, and initial inspection looks like some form of British Ransomware demanding £50GBP to recover your files.
 

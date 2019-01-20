@@ -5,8 +5,6 @@ description: "Its now 2019 and people still don't understand GDPR. Are you aware
 date:   2019-01-01 01:49:33 +0000
 tags: [consultancy, GDPR, Data Privacy,]
 ---
-# The complexities of understanding GDPR
-
 ![GDPR](/blog/assets/GDPR.jpg)
 
 ## TL;DR

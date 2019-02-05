@@ -131,4 +131,4 @@ Apply:
 ## Conclusion
 SNMP is a simple and powerful protocol for network management. It looks like Arris and Virgin Media are aware of the strengths
 and weaknesses of this protocol and the API interface, and have made several settings read-only; Hopefully, to prevent attackers
-from hijacking the cable modems for nefarious purposes; Or simply to stop customs messing with settings and bricking their modems.
+from hijacking the cable modems for nefarious purposes; Or simply to stop customers messing with settings and bricking their modems.

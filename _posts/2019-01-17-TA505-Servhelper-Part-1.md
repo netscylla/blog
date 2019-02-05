@@ -253,7 +253,7 @@ Again, a quick search on Virus Total reveals these are indeed Trojan pieces of c
  * size: 308KiB
  * Timestamp 2 Nov 2018
 
-Whois Record (Same Actor):
+Whois Record (Possibly the same Actor hiding behind same registrar):
 
 ```
 The Registry database contains ONLY .COM, .NET, .EDU domains and

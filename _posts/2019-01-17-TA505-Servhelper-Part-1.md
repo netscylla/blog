@@ -244,7 +244,7 @@ Again, a quick search on Virus Total reveals these are indeed Trojan pieces of c
 * Raids browser cookies in chrome and firefox (cookies.sqlite)
 * Uses volume shadow copy (vssvc.exe) to create a shadow copy
 
-###varient 2
+### varient 2
 
  * Dropper URL: mshomebox365.com/plugin
  * storsvc.exe 

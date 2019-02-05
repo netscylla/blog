@@ -46,4 +46,4 @@ you can turn this cheap and affordable picking set into a decent set of lockpick
 proud to hold.
 
 # How to finish lock picks
-Please refer to our future post **[How to polish and finish lockpicks](https://www.netscylla.com/blog/2018/12/30/Polishing-Lockpicks)**
+Please refer to our future post **[How to polish and finish lockpicks](https://www.netscylla.com/blog/2018/12/30/Polishing-Lockpicks.html)**

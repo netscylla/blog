@@ -109,6 +109,12 @@ Attempt Changing the DNS to 1.1.1.1:
 Despite trying to change the DNS settings to 1.1.1.1 - unfortunately they remain unchanged from the default settings. Hints on the Virgin community
 forums are that this specific issue has been previously reported, and now a number of settings have been changed to read-only values.
 
+This is backed up by the log entry (again using the snmpwalk API to obtain this info)
+
+```
+"1.3.6.1.4.1.4115.1.20.1.1.5.19.1.4.1.3.3":"[ERROR] [DOCSIS.SNMP(pid=538)]: OID: 1.3.6.1.4.1.4115.1.20.1.1.1.11.2.1.3.1 NOT WRITABLE"
+```
+
 ## Changing the default network range
 Set Gateway IP:
  * http://192.168.0.1/snmpSet?oid=1.3.6.1.4.1.4115.1.20.1.1.2.2.1.5.200=%24c0a802fe;4;&_n=XXXX

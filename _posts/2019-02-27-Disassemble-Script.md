@@ -11,7 +11,7 @@ tags: [Malware, Incident Response, Pentesting, Red Team]
 Earlier this month John Lambert(@JohnLaTwc) shared this tweet:
 https://twitter.com/JohnLaTwC/status/1097219687312646145
 
-![John Lamebert Tweet 1097219687312646145](/assets/JohnL-shellcode.png)
+![John Lamebert Tweet 1097219687312646145](/blog/assets/JohnL-shellcode.png)
 
 The URL in the tweet is this:
  * [https://github.com/JohnLaTwC/Shared/blob/master/notebooks/Malware%20PowerShell%20shellcode%20analysis.ipynb

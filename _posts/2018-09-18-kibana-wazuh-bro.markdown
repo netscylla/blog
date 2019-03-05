@@ -172,36 +172,13 @@ filebeat:
   - input_type: log
     paths:
      - "/usr/local/bro/spool/bro/conn.log"
-    document_type: json
-    json.message_key: log
-    json.keys_under_root: true
-    json.overwrite_keys: true
-
-  - input_type: log
-    paths:
      - "/usr/local/bro/spool/bro/dns.log"
-    document_type: json
-    json.message_key: log
-    json.keys_under_root: true
-    json.overwrite_keys: true
-
-  - input_type: log
-    paths:
      - "/usr/local/bro/spool/bro/http.log"
-    document_type: json
-    json.message_key: log
-    json.keys_under_root: true
-    json.overwrite_keys: true
-
-  - input_type: log
-    paths:
      - "/usr/local/bro/spool/bro/intel.log"
     document_type: json
     json.message_key: log
     json.keys_under_root: true
     json.overwrite_keys: true
-
-# copy inputs to add additional bro logs as needed
 
 output:
  logstash:
@@ -210,11 +187,16 @@ output:
 ```
 ### Logstash
 Our Logstash configuration <code>/etc/logstash/conf.d/bro.conf</code>:
+ * https://gist.github.com/netscylla/54bcfec77e198cd402b5bd9a1ef75ee5
+ 
 ```
 input {
     beats {
         port => 5001
-        codec => "json_lines"
+        codec => "json"
+#        ssl => true
+#        ssl_certificate => "/etc/logstash/logstash.crt"
+#        ssl_key => "/etc/logstash/logstash.key"
     }
 }
 
@@ -224,15 +206,6 @@ filter {
   if [message] =~ /^#/ {
     drop { }
   }
-
-  #Now, using the csv filter, we can define the Bro log fields
-  if [type] == "bro-conn_log" {
-    csv {
-      columns => ["ts","uid","id.orig_h","id.orig_p","id.resp_h","id.resp_p","proto","service","duration","orig_bytes","resp_bytes","conn_state","local_orig","missed_bytes","history","orig_pkts","orig_ip_bytes","resp_pkts","resp_ip_bytes","tunnel_parents"]
-
-      #If you use a custom delimiter, change the following value in between the quotes to your delimiter. Otherwise, insert a literal <tab> in between the two quotes on your logstash system, use a text editor like nano that doesn't convert tabs to spaces.
-      separator => "	"
-    }
 
     #Let's convert our timestamp into the 'ts' field, so we can use Kibana features natively
     date {
@@ -267,7 +240,7 @@ filter {
                     "RSTOS0", "Originator sent a SYN followed by a RST, we never saw a SYN-ACK from the responder",
                     "RSTRH", "Responder sent a SYN ACK followed by a RST, we never saw a SYN from the (purported) originator",
                     "SH", "Originator sent a SYN followed by a FIN, we never saw a SYN ACK from the responder (hence the connection was 'half' open)",
-		    "SHR", "Responder sent a SYN ACK followed by a FIN, we never saw a SYN from the originator",
+		                "SHR", "Responder sent a SYN ACK followed by a FIN, we never saw a SYN from the originator",
                     "OTH", "No SYN seen, just midstream traffic (a 'partial connection' that was not later closed)"
                     ]
     }
@@ -288,11 +261,10 @@ filter {
       rename =>  [ "id.resp_h", "id_resp_host" ]
       rename =>  [ "id.resp_p", "id_resp_port" ]
     }
-  }
 }
 
 output {
-  #stdout { codec => rubydebug }
+  stdout { codec => rubydebug }
   elasticsearch {  
         hosts => ["localhost:9200"]
         index => "bro-conn-%{+YYYY.MM.dd}"

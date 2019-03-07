@@ -40,6 +40,9 @@ The power of the functionality behind Ghidra is quite phenominal as it can suppo
  * Android  
  * & more ....
  
+RSA 2019 Slides can be found here, that go into the release in more detail:
+ * https://www.rsaconference.com/writable/presentations/file_upload/png-t09-come-get-your-free-nsa-reverse-engineering-tool_.pdf
+ 
 ## Where can I get Ghidra
 So far only the binary is released (Version 9):
   * [https://ghidra-sre.org/](https://ghidra-sre.org/)

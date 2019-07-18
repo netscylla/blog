@@ -3,7 +3,7 @@ layout: post
 title:  "Whereis - The whois miner"
 description: "A script for mining net-ranges from whois records given a specific keyword"
 date:   2019-05-23 13:49:33 +0000
-tags: [Threat Intel, Red Team, Pentest, DevSecPps]
+tags: [Threat Intel, Red Team, Pentest, DevSecOps]
 ---
 
 ![suspicious word doc](/assets/miner.png)

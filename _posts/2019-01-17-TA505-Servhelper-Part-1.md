@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TA505 and Servhelper Malware"
-description: "A walkthrough on analysising a suspicious mail attachment to the discovery and identification of malware"
+description: "A walkthrough on analysing a suspicious mail attachment to the discovery and identification of malware"
 date:   2019-01-17 10:49:33 +0000
 tags: [Malware, Incident Response]
 ---

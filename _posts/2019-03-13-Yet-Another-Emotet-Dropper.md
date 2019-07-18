@@ -15,7 +15,7 @@ If we follow the link we download and open a document with macros disabled it sh
 
 ![suspicious word doc](/blog/assets/Emotet_Word.png)
 
-After looking at the macros, the code looks heavily obfuscated! we can guess there is somethign malcious here
+After looking at the macros, the code looks heavily obfuscated! we can guess there is something malicious here
 but how do we de-obfuscate and reveal the malware code hidden within Microsoft Office documents.
 
 ## Trying oletools

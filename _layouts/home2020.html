@@ -11,13 +11,13 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     
-    <p>Other years available: <a href="{{ "/2020.html" | relative_url }}">2020</a>,<a href="{{ "/2018.html" | relative_url }}">2018</a></p>
+    <p>Other years available: <a href="{{ "/2019.html" | relative_url }}">2019</a>,<a href="{{ "/2018.html" | relative_url }}">2018</a></p>
 
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       {%- assign year = (post.date | date: "%Y") -%}
-      {%- if year == "2019" -%}
+      {%- if year == "2020" -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>

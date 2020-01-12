@@ -45,7 +45,8 @@ Our comparison cheatsheet of frequently used bash networking commands and their 
 |route	|Get-NetRoute <br> Get-NetRoute -Protocol Local -DestinationPrefix 192.168*\|Get-NetAdapter Wi-Fi 
 |netstat -an	|Get-NetTCPConnection \| ? State -eq Listen <br> Get-NetTCPConnection \| ? State -eq Listen \| ? LocalAddress -notlike "::*"|
 |tracert	|Test-NetConnection www.microsoft.com –TraceRoute<br>Test-NetConnection outlook.com -TraceRoute \| Select -ExpandProperty TraceRoute \| % { Resolve-DnsName $_ -type PTR -ErrorAction SilentlyContinue }
-|netstat	|Get-NetTCPConnection \| Group State, RemotePort \| Sort Count \| FT Count, Name –Autosize<br>Get-NetTCPConnection \| ? State -eq Established \| FT –Autosize<br>Get-NetTCPConnection \| ? State -eq Established \| ? RemoteAddress -notlike 127* \| % { $_; Resolve-DnsName $_.RemoteAddress -type PTR -ErrorAction SilentlyContinue }
+|netstat	|Get-NetTCPConnection \| Group State, RemotePort \| Sort Count \| FT Count, Name –Autosize<br>Get-NetTCPConnection \| ? State -eq Established \| FT –Autosize<br>Get-NetTCPConnection \| ? State -eq Established \| ? RemoteAddress -notlike 127* \| % { $_; Resolve-DnsName $_.RemoteAddress -type PTR -ErrorAction SilentlyContinue }|
+|who<br>w|ForEach ($log in (get-eventlog system -source Microsoft-Windows-Winlogon -After (Get-Date).AddDays(-7))) {if($log.instanceid -eq 7001) {$type = "Logon"} Elseif ($log.instanceid -eq 7002){$type="Logoff"} Else {Continue} $res += New-Object PSObject -Property @{Time = $log.TimeWritten; "Event" = $type; User = (New-Object System.Security.Principal.SecurityIdentifier $Log.ReplacementStrings[1]).Translate([System.Security.Principal.NTAccount])}};$res;|
 
 ## Passwords
 ### Generate Random Password

@@ -6,7 +6,7 @@ date:   2020-02-01 11:00:01 +0000
 tags: [Blue-Team, SOC, Monitoring, Logging]
 ---
 
-![Hunting with Sysmon](/assets/search.png)
+![Hunting with Sysmon](/blog/assets/search.png)
 
 ## DeepBlueCLI
 A PowerShell Module for Threat Hunting via Windows Event Logs

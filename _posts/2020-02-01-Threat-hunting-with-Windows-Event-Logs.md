@@ -137,6 +137,7 @@ The badmalware executable is likely now running in memory, and performing additi
  * downloading additional malware
  * encrypting the user’s files (ransomware(
  * or establish persistence of some sort. 
+
 At this point you wished you were recording other actions on the endpoint to know exactly what changes were made
 
 ## References

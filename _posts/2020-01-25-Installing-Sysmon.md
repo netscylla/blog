@@ -2,7 +2,7 @@
 layout: post
 title:  "Installing Sysmon"
 description: "a brief post on the installation and setup of Sysinternals Sysmon & associated Tooling"
-date:   2020-01-01 00:00:01 +0000
+date:   2020-01-25 13:00:01 +0000
 tags: [Blue-Team, SOC, Monitoring, Logging]
 ---
 

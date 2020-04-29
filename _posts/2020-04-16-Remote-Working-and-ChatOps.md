@@ -102,8 +102,9 @@ Hopefully, you should be up and running!
 ![rocket chat example](/assets/rocketchat2.png)
 
 ### Integrations
-I wont cover the details here, but integrations are exactly the same as you would configure webhooks in the most popular ChatOps platforms.  For an example of integrating Gitlab alerts, Rocket.Chat have already provided a working example, that is easy to follow here:
+We won't cover the details here, but integrations are exactly the same as you would configure webhooks in the most popular ChatOps platforms.  For an example of integrating Github & Gitlab alerts, Rocket.Chat have already provided working examples, that are easy to follow here:
  * [https://rocket.chat/docs/administrator-guides/integrations/github/](https://rocket.chat/docs/administrator-guides/integrations/github/)
+ * [https://rocket.chat/docs/administrator-guides/integrations/gitlab/](https://rocket.chat/docs/administrator-guides/integrations/gitlab/)
 
 ## Final Thoughts
 Do not forget to harden the base Operating System, configure a suitable firewall and possibly include a VPN such as [Wireguard](https://www.netscylla.com/blog/2020/03/24/Wireguard-VPN.html), to ensure secure access to your new ChatOps server.

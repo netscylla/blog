@@ -57,7 +57,7 @@ import intel
 from RocketChatBot import RocketChatBot
 
 botname = 'intel_bot'
-server_url = 'https://rocket.ntsy.me'
+server_url = 'https://your_chat_server_domain'
 channel='general'
 
 def printhelp(msg, user, channel_id):
